@@ -1,21 +1,21 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #000000;
-    color: #ffffff;
+    background-color: #0b0b0b;   /* softer black */
+    color: #f5f5f5;              /* off-white */
 }
 
 /* Header */
 header {
     text-align: center;
     padding: 25px;
+    background-color: #000;
     border-bottom: 1px solid #d4af37;
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
     color: #d4af37;
-    margin: 0;
 }
 
 header p {
@@ -26,11 +26,12 @@ header p {
 nav {
     display: flex;
     justify-content: center;
+    background-color: #000;
     border-bottom: 1px solid #d4af37;
 }
 
 nav a {
-    color: white;
+    color: #f5f5f5;
     padding: 12px 20px;
     text-decoration: none;
 }
@@ -45,16 +46,17 @@ nav a:hover {
     padding: 40px 20px;
 }
 
-/* 🔥 NO COMPRESSION FIX */
+/* Image fix */
 .hero img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    object-fit: cover;  /* VERY IMPORTANT */
+    object-fit: cover;
     border: 3px solid #d4af37;
+    box-shadow: 0 0 15px rgba(212,175,55,0.4);
 }
 
-/* Heading */
+/* Headings */
 .hero h2 {
     font-family: 'Playfair Display', serif;
     color: #d4af37;
@@ -62,18 +64,19 @@ nav a:hover {
 
 /* Text */
 .hero p {
-    color: #e5e5e5;
-    max-width: 500px;
-    margin: auto;
+    color: #dddddd;
 }
 
 /* Sections */
 section {
     max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #111;   /* 🔥 adds depth */
+    border-radius: 10px;
 }
 
+/* Section Titles */
 section h2 {
     font-family: 'Playfair Display', serif;
     color: #d4af37;
@@ -81,22 +84,29 @@ section h2 {
     padding-left: 10px;
 }
 
+/* Paragraph */
+section p {
+    color: #e5e5e5;
+    line-height: 1.7;
+}
+
+/* Skills list */
+ul {
+    color: #e5e5e5;
+}
+
 /* Cards */
 .card {
-    background: #111111;
+    background-color: #0f0f0f;
+    border: 1px solid #222;
     padding: 15px;
     margin-top: 15px;
     border-radius: 10px;
-    border: 1px solid #222;
 }
 
 .card:hover {
     border-color: #d4af37;
-}
-
-/* Links */
-a {
-    color: #d4af37;
+    box-shadow: 0 0 10px rgba(212,175,55,0.3);
 }
 
 /* Footer */
@@ -104,4 +114,10 @@ footer {
     text-align: center;
     padding: 15px;
     border-top: 1px solid #d4af37;
+    background-color: #000;
+}
+
+/* Links */
+a {
+    color: #d4af37;
 }
